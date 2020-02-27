@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  color: #eee;
+  background: #940000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.btn-2 {
+  display: inline-block;
+  border-radius: 0.5rem;
+  color: #eee;
+  background: #940000;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+
+}
+
+.navbar {
+  background: #940000;
+  color: #eee;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+}
+
+.footer {
+  background: #940000;
+  color: #eee;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
+
+}
+
+.container {
+  padding: 3rem;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.cardList {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  color: #eee;
+  background-color: #333;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: grid;
+  text-align: left;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    'name image'
+    'nationalPokedexNumber image'
+    'types image';
+}
+
+.card > h2 {
+  grid-area: name;
+  
+}
+
+.card > h3 {
+  grid-area: nationalPokedexNumber;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+.card > p {
+  grid-area: types;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+.card > img {
+  max-height: 10rem;
+  grid-area: image;
+}
+
+.card-info {
+  color: #eee;
+  background-color: #333;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  display: grid;
+  text-align: left;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    'name image'
+    'nationalPokedexNumber image'
+    'subtype image'
+    'types image'
+    'artist image'
+    'series image';
+}
+
+.card-info > h2 {
+  grid-area: name;
+  
+}
+
+.card-info > h3 {
+  grid-area: nationalPokedexNumber;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+.card-info > p {
+  grid-area: subtype, types, artist, series;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  
+}
+
+.card-info > img {
+  grid-area: image;
+  max-height: 20rem;
+
+}
+
+.searchBar {
+  width: 100%;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #eaeaea;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.searchBox {
+  color: #eee;
+  background-color: #333;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.searchWrapper {
+  position: relative;
+}
+
+.searchWrapper::after {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
