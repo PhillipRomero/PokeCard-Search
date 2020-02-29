@@ -149,7 +149,7 @@ h1 {
 
 .card-info > img {
   grid-area: image;
-  max-height: auto;
+  max-height: 20rem;
 
 }
 

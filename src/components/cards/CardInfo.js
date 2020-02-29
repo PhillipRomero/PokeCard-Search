@@ -36,7 +36,7 @@ class CardInfo extends Component {
           <p>Type: {cardinfo.card.types}</p>
           <p>Card Artist: {cardinfo.card.artist}</p>
           <p>Series: {cardinfo.card.series}</p>
-          <img src={cardinfo.card.imageUrl} alt= {'CardArt'}/>
+          <img src={cardinfo.card.imageUrlHiRes} alt= {'CardArt'}/>
         </div>
       </React.Fragment>
 
