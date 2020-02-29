@@ -115,7 +115,7 @@ h1 {
   color: #eee;
   background-color: #333;
   border-radius: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
   display: grid;
   text-align: left;
   grid-template-columns: 2fr 1fr;
@@ -149,7 +149,7 @@ h1 {
 
 .card-info > img {
   grid-area: image;
-  max-height: 15rem;
+  max-height: auto;
 
 }
 
@@ -182,4 +182,40 @@ h1 {
 
 .text-center {
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .card-info {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'image';   
+  } 
+  .card-info > h2, .card-info > h3, .card-info > p {
+    display: none;
+  }
+
+  .card-info > img {
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-info > img {
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+    max-height: 16rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card-info > img {
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+    max-height: 11rem;
+  }
 }
