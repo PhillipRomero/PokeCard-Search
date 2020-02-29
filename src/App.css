@@ -66,6 +66,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
+  align-self: center;
 }
 
 .card-link {
@@ -148,7 +149,7 @@ h1 {
 
 .card-info > img {
   grid-area: image;
-  max-height: 20rem;
+  max-height: 15rem;
 
 }
 
